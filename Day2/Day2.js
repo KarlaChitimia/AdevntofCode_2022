@@ -44,60 +44,43 @@ function partOne(a){
 	console.log(score);
 }
 
-function win(opponent){
-	let choice = '';
-	switch(opponent){
-			
-		case 'A':
-			choice = 'paper';
-			break;
-		case 'B':
-			choice = 'scissors';
-			break;
-		case 'C':
-			choice = 'rock';
-			break;
-	}
+function win(opponent) {
+	switch (opponent) {
 
-	return choice;
+		case 'A':
+			return 'paper';
+
+		case 'B':
+			return 'scissors';
+
+		case 'C':
+			return 'rock';
+	}
 }
 
-function draw(opponent){
-	let choice = '';	
-	switch(opponent){
-			
+function draw(opponent) {
+	switch (opponent) {
+
 		case 'A':
-			choice = 'rock';
-			break;
+			return 'rock';
 		case 'B':
-			choice = 'paper';
-			break;
+			return 'paper';
 		case 'C':
-			choice = 'scissors';
-			break;
+			return 'scissors';
 	}
 
-	return choice;
-	
 }
 
-function lose(opponent){
-	let choice =  '';	
-	switch(opponent){
-			
-		case 'A':
-			choice = 'scissors';
-			break;
-		case 'B':
-			choice = 'rock';
-			break;
-		case 'C':
-			choice = 'paper';
-			break;
-	}
+function lose(opponent) {
+	switch (opponent) {
 
-	return choice;
-	
+		case 'A':
+			return 'scissors';
+		case 'B':
+			return 'rock';
+		case 'C':
+			return 'paper';
+	}
 }
 
 function partTwo(a){
